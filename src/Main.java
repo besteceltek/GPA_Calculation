@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        //Created the variables
         int math, phys, chem, turkish, hist, music;
 
+        //Requested the data for previously created variables from user
         System.out.println("Please enter your Mathematics grade: ");
         math = input.nextInt();
 
@@ -23,8 +25,10 @@ public class Main {
         System.out.println("Please enter your Music grade: ");
         music = input.nextInt();
 
+        //Calculated the mean grade
         int mean_grade = (math + phys + chem + turkish + hist + music) / 6;
 
+        //Checked whether the user has passed or failed
         if(mean_grade > 60) {
             System.out.println("Passed!");
         }
